@@ -69,14 +69,14 @@ public class CloverForPlugins
        // clover.jar
        addFileBinding(
            properties,
-           CLOVER_JAR_KEY,
-           SUBSYSTEM_PREFIX + CLOVER_JAR_KEY,
-           "clover/lib/clover.jar" );
+           CLOVER_DIR_KEY,
+           SUBSYSTEM_PREFIX + CLOVER_DIR_KEY,
+           "clover" );
    }
 
 
    //~ Instance/static variables .............................................
 
    private static final String SUBSYSTEM_PREFIX = "CloverForPlugins.";
-   private static final String CLOVER_JAR_KEY   = "clover.jar";
+   private static final String CLOVER_DIR_KEY   = "clover.dir";
 }
