@@ -19,13 +19,13 @@
  |  along with Web-CAT; if not, see <http://www.gnu.org/licenses/>.
 \*==========================================================================*/
 
-package net.sf.webcat.cloverforplugins;
+package org.webcat.cloverforplugins;
 
 import com.webobjects.foundation.*;
 import java.io.*;
 import org.apache.log4j.Logger;
-import net.sf.webcat.core.Application;
-import net.sf.webcat.core.Subsystem;
+import org.webcat.core.Application;
+import org.webcat.core.Subsystem;
 
 // -------------------------------------------------------------------------
 /**
