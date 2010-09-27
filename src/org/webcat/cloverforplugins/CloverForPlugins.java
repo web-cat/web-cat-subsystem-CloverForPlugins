@@ -22,9 +22,6 @@
 package org.webcat.cloverforplugins;
 
 import com.webobjects.foundation.*;
-import java.io.*;
-import org.apache.log4j.Logger;
-import org.webcat.core.Application;
 import org.webcat.core.Subsystem;
 
 // -------------------------------------------------------------------------
@@ -32,8 +29,9 @@ import org.webcat.core.Subsystem;
  *  This subsystem provides <a href="http://www.cenqua.com/clover/">Clover</a>
  *  for grading plug-ins.
  *
- *  @author  stedwar2
- *  @version $Id$
+ *  @author  Stephen Edwards
+ *  @author  Last changed by $Author$
+ *  @version $Revision$, $Date$
  */
 public class CloverForPlugins
     extends Subsystem
@@ -59,14 +57,15 @@ public class CloverForPlugins
     * @param properties the dictionary to add new properties to;
     * individual plug-in information may override these later.
     */
-   public void addPluginPropertyBindings( NSMutableDictionary properties )
+   public void addPluginPropertyBindings(
+       NSMutableDictionary<String, String> properties)
    {
        // clover.jar
        addFileBinding(
            properties,
            CLOVER_DIR_KEY,
            SUBSYSTEM_PREFIX + CLOVER_DIR_KEY,
-           "clover" );
+           "clover");
    }
 
 
